@@ -37,7 +37,9 @@ Juego arcade de acción rápida donde el jugador debe interactuar con diferentes
 
 **Tecnologías:** HTML, CSS, JavaScript
 
-[🎮 Ver proyecto](./TURBOPLATO)
+[📂 Ver proyecto](./TURBOPLATO)
+
+[🎮 JUGAR TURBOPLATO](https://pattybln.github.io/game-development-portfolio/TURBOPLATO/)
 
 </td>
 
@@ -53,7 +55,9 @@ Juego donde el jugador controla un personaje que explora un mapa y administra re
 
 **Tecnologías:** HTML, CSS, JavaScript
 
-[🎮 Ver proyecto](./VIDA-EN-BALANCE)
+[📂 Ver proyecto](./VIDA-EN-BALANCE)
+
+[🎮 JUGAR VIDA EN BALANCE](https://pattybln.github.io/game-development-portfolio/VIDA-EN-BALANCE/)
 
 </td>
 
@@ -70,10 +74,12 @@ Juego donde el jugador controla un personaje que explora un mapa y administra re
 
 > Un juego arcade basado en velocidad y reacción. El jugador debe identificar los alimentos y conseguir la mayor puntuación antes de que termine el tiempo.
 
-**Género:** Arcade  
+**Género:** Arcade
 **Tecnologías:** HTML5, CSS3, JavaScript
 
-[🎮 Ver TURBOPLATO](./TURBOPLATO)
+[🎮 JUGAR TURBOPLATO](https://pattybln.github.io/game-development-portfolio/TURBOPLATO/)
+
+[📂 Ver documentación](./TURBOPLATO)
 
 ---
 
@@ -83,10 +89,12 @@ Juego donde el jugador controla un personaje que explora un mapa y administra re
 
 > Un videojuego de exploración y simulación donde el jugador controla un personaje, recorre un mapa y administra diferentes recursos.
 
-**Género:** Adventure / Simulation  
+**Género:** Adventure / Simulation
 **Tecnologías:** HTML5, CSS3, JavaScript
 
-[🎮 Ver VIDA EN BALANCE](./VIDA-EN-BALANCE)
+[🎮 JUGAR VIDA EN BALANCE](https://pattybln.github.io/game-development-portfolio/VIDA-EN-BALANCE/)
+
+[📂 Ver documentación](./VIDA-EN-BALANCE)
 
 ---
 
@@ -94,15 +102,15 @@ Juego donde el jugador controla un personaje que explora un mapa y administra re
 
 <p align="center">
 
-![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge\&logo=html5\&logoColor=white)
 
-![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge\&logo=css3\&logoColor=white)
 
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge\&logo=javascript\&logoColor=black)
 
-![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)
+![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge\&logo=github\&logoColor=white)
 
-![Visual Studio Code](https://img.shields.io/badge/Visual%20Studio%20Code-007ACC?style=for-the-badge&logo=visual-studio-code&logoColor=white)
+![Visual Studio Code](https://img.shields.io/badge/Visual%20Studio%20Code-007ACC?style=for-the-badge\&logo=visual-studio-code\&logoColor=white)
 
 </p>
 
@@ -112,13 +120,13 @@ Juego donde el jugador controla un personaje que explora un mapa y administra re
 
 Durante el desarrollo de los proyectos se utilizó **Inteligencia Artificial como herramienta de apoyo** para:
 
-- Generación y mejora de ideas.
-- Apoyo en la programación.
-- Corrección de errores.
-- Propuestas para mejorar las mecánicas.
-- Diseño y organización de elementos visuales.
+* Generación y mejora de ideas.
+* Apoyo en la programación.
+* Corrección de errores.
+* Propuestas para mejorar las mecánicas.
+* Diseño y organización de elementos visuales.
 
-La IA fue utilizada como herramienta de apoyo durante el proceso creativo y de desarrollo, mientras que los proyectos fueron probados y adaptados para cumplir con los objetivos de la práctica.
+La IA fue utilizada como herramienta de apoyo durante el proceso creativo y de desarrollo. Los proyectos fueron probados, modificados y adaptados para cumplir con los objetivos de la práctica.
 
 ---
 
@@ -126,15 +134,15 @@ La IA fue utilizada como herramienta de apoyo durante el proceso creativo y de d
 
 Durante el desarrollo de estos videojuegos aprendí a:
 
-- Diseñar mecánicas de juego.
-- Crear interfaces interactivas.
-- Programar eventos y acciones del jugador.
-- Implementar sistemas de puntuación.
-- Crear movimiento de personajes.
-- Diseñar escenarios.
-- Organizar proyectos en GitHub.
-- Documentar videojuegos.
-- Mejorar proyectos mediante pruebas.
+* Diseñar mecánicas de juego.
+* Crear interfaces interactivas.
+* Programar eventos y acciones del jugador.
+* Implementar sistemas de puntuación.
+* Crear movimiento de personajes.
+* Diseñar escenarios.
+* Organizar proyectos en GitHub.
+* Documentar videojuegos.
+* Mejorar proyectos mediante pruebas.
 
 ---
 
@@ -142,20 +150,20 @@ Durante el desarrollo de estos videojuegos aprendí a:
 
 ### TURBOPLATO
 
-- Agregar más alimentos.
-- Incorporar diferentes niveles.
-- Mejorar las animaciones.
-- Agregar efectos de sonido.
-- Incorporar nuevos desafíos.
+* Agregar más alimentos.
+* Incorporar diferentes niveles.
+* Mejorar las animaciones.
+* Agregar efectos de sonido.
+* Incorporar nuevos desafíos.
 
 ### VIDA EN BALANCE
 
-- Ampliar el mapa.
-- Agregar nuevas zonas.
-- Incorporar más interacciones.
-- Añadir nuevas decisiones.
-- Mejorar las animaciones.
-- Agregar efectos de sonido.
+* Ampliar el mapa.
+* Agregar nuevas zonas.
+* Incorporar más interacciones.
+* Añadir nuevas decisiones.
+* Mejorar las animaciones.
+* Agregar efectos de sonido.
 
 ---
 
