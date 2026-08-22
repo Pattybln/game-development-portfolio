@@ -33,7 +33,7 @@ Seguir desarrollando mis habilidades para crear videojuegos cada vez más comple
 <table>
 <tr>
 
-<td width="33%" align="center">
+<td width="50%" align="center">
 
 ## 🍎 TURBOPLATO
 
@@ -63,7 +63,7 @@ Juego arcade de acción rápida donde el jugador debe interactuar correctamente 
 
 </td>
 
-<td width="33%" align="center">
+<td width="50%" align="center">
 
 ## 🌱 VIDA EN BALANCE
 
@@ -93,7 +93,11 @@ Videojuego de exploración donde el jugador controla un personaje, recorre un ma
 
 </td>
 
-<td width="33%" align="center">
+</tr>
+
+<tr>
+
+<td width="50%" align="center">
 
 ## 💧 RETO GOTA A GOTA
 
@@ -116,6 +120,36 @@ Videojuego educativo e interactivo donde el jugador debe tomar decisiones rápid
 <br><br>
 
 <a href="./AGUA">
+
+📂 Ver documentación
+
+</a>
+
+</td>
+
+<td width="50%" align="center">
+
+## 🧮 ZAFIMATH ADVENTURE
+
+### Aventura Matemática
+
+Videojuego educativo ambientado en una selva donde el jugador debe resolver operaciones matemáticas para liberar animales atrapados.
+
+**🎨 Género:** Educativo / Adventure / Puzzle
+
+**💻 Tecnologías:** HTML5, CSS3, JavaScript
+
+<br>
+
+<a href="https://pattybln.github.io/game-development-portfolio/ZAFARI/">
+
+<strong>🎮 JUGAR</strong>
+
+</a>
+
+<br><br>
+
+<a href="./ZAFARI">
 
 📂 Ver documentación
 
@@ -242,6 +276,44 @@ El jugador debe resolver diferentes situaciones, conseguir puntos, ahorrar litro
 
 ---
 
+## 🧮 ZAFIMATH ADVENTURE
+
+<div align="center">
+
+<img src="./ZAFARI/zafimath-gameplay.png" alt="Gameplay de Zafimath Adventure" width="850">
+
+</div>
+
+### 🎯 Descripción
+
+**Zafimath Adventure** es un videojuego educativo de aventura matemática ambientado en una selva.
+
+El jugador debe resolver operaciones de suma, resta, multiplicación y división para liberar animales atrapados y completar los **10 niveles** de la aventura.
+
+**Género:** Educativo / Adventure / Puzzle
+
+**Tecnologías:** HTML5, CSS3, JavaScript
+
+<div align="center">
+
+<a href="https://pattybln.github.io/game-development-portfolio/ZAFARI/">
+
+🎮 **JUGAR ZAFIMATH ADVENTURE**
+
+</a>
+
+   
+
+<a href="./ZAFARI">
+
+📂 **VER DOCUMENTACIÓN**
+
+</a>
+
+</div>
+
+---
+
 # 🛠️ TECNOLOGÍAS Y HERRAMIENTAS
 
 <div align="center">
@@ -313,6 +385,8 @@ Durante el desarrollo de estos videojuegos aprendí a:
 
 💧 Diseñar experiencias educativas mediante videojuegos.
 
+🧮 Crear sistemas de preguntas y respuestas.
+
 📁 Organizar proyectos utilizando GitHub.
 
 📝 Documentar proyectos de manera profesional.
@@ -350,6 +424,18 @@ Durante el desarrollo de estos videojuegos aprendí a:
 * 🔊 Agregar efectos de sonido y música.
 * 📊 Añadir estadísticas más completas.
 * 📚 Incorporar más consejos educativos.
+
+## 🧮 ZAFIMATH ADVENTURE
+
+* 🧮 Agregar más operaciones matemáticas.
+* 🎯 Incorporar diferentes niveles de dificultad.
+* 🐾 Añadir más animales.
+* 🔊 Agregar efectos de sonido y música.
+* ✨ Mejorar las animaciones.
+* 🌴 Ampliar el escenario de la selva.
+* 🏆 Crear un sistema de récords.
+* 📊 Incorporar estadísticas del jugador.
+* 🎮 Agregar más mecánicas de exploración.
 
 ---
 
