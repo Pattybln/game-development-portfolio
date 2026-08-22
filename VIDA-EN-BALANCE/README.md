@@ -57,3 +57,7 @@ El personaje puede desplazarse por el mapa utilizando el teclado y explorar el e
 - Mejorar las animaciones.
 - Incorporar efectos de sonido.
 - Añadir nuevos sistemas de recursos.
+
+## 📸 Captura de pantalla
+
+![VIDA EN BALANCE - Gameplay](./vida-en-balance-gameplay.png)
