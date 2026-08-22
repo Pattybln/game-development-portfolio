@@ -42,3 +42,6 @@ Conseguir la mayor puntuación posible antes de que termine el tiempo, interactu
 ## ⏱️ Duración
 
 La partida tiene una duración limitada y el jugador debe conseguir la mayor puntuación posible antes de que finalice el tiempo.
+## 📸 Captura de pantalla
+
+![TURBOPLATO - Gameplay](./turboplato-gameplay.png)
