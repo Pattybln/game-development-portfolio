@@ -33,7 +33,7 @@ Seguir desarrollando mis habilidades para crear videojuegos cada vez más comple
 <table>
 <tr>
 
-<td width="50%" align="center">
+<td width="33%" align="center">
 
 ## 🍎 TURBOPLATO
 
@@ -63,7 +63,7 @@ Juego arcade de acción rápida donde el jugador debe interactuar correctamente 
 
 </td>
 
-<td width="50%" align="center">
+<td width="33%" align="center">
 
 ## 🌱 VIDA EN BALANCE
 
@@ -93,11 +93,7 @@ Videojuego de exploración donde el jugador controla un personaje, recorre un ma
 
 </td>
 
-</tr>
-
-<tr>
-
-<td width="50%" align="center">
+<td width="33%" align="center">
 
 ## 💧 RETO GOTA A GOTA
 
@@ -127,7 +123,11 @@ Videojuego educativo e interactivo donde el jugador debe tomar decisiones rápid
 
 </td>
 
-<td width="50%" align="center">
+</tr>
+
+<tr>
+
+<td width="33%" align="center">
 
 ## 🧮 ZAFIMATH ADVENTURE
 
@@ -154,6 +154,48 @@ Videojuego educativo ambientado en una selva donde el jugador debe resolver oper
 📂 Ver documentación
 
 </a>
+
+</td>
+
+<td width="33%" align="center">
+
+## ♻️ ECOHÉROES
+
+### Rescate del Relleno
+
+Videojuego educativo de clasificación de residuos donde el jugador debe seleccionar el contenedor correcto antes de que termine el tiempo.
+
+**🎨 Género:** Educativo / Casual
+
+**💻 Tecnologías:** HTML5, CSS3, JavaScript
+
+<br>
+
+<a href="https://pattybln.github.io/game-development-portfolio/ECOHEROES/">
+
+<strong>🎮 JUGAR</strong>
+
+</a>
+
+<br><br>
+
+<a href="./ECOHEROES">
+
+📂 Ver documentación
+
+</a>
+
+</td>
+
+<td width="33%" align="center">
+
+### 🎮 MÁS PROYECTOS
+
+Este portafolio seguirá creciendo con nuevos prototipos y experiencias interactivas desarrolladas durante mi formación en **Game Development**.
+
+<br><br>
+
+**🚀 Próximamente**
 
 </td>
 
@@ -314,6 +356,44 @@ El jugador debe resolver operaciones de suma, resta, multiplicación y división
 
 ---
 
+## ♻️ ECOHÉROES — RESCATE DEL RELLENO
+
+<div align="center">
+
+<img src="./ECOHEROES/ecoheroes-gameplay.png" alt="Gameplay de EcoHéroes" width="850">
+
+</div>
+
+### 🎯 Descripción
+
+**EcoHéroes: Rescate del Relleno** es un videojuego educativo de clasificación de residuos.
+
+El jugador debe identificar correctamente cada residuo y seleccionar el contenedor correspondiente antes de que termine el tiempo. El juego incorpora puntos, rachas, vidas, aciertos y precisión.
+
+**Género:** Educativo / Casual
+
+**Tecnologías:** HTML5, CSS3, JavaScript
+
+<div align="center">
+
+<a href="https://pattybln.github.io/game-development-portfolio/ECOHEROES/">
+
+🎮 **JUGAR ECOHÉROES**
+
+</a>
+
+   
+
+<a href="./ECOHEROES">
+
+📂 **VER DOCUMENTACIÓN**
+
+</a>
+
+</div>
+
+---
+
 # 🛠️ TECNOLOGÍAS Y HERRAMIENTAS
 
 <div align="center">
@@ -387,6 +467,8 @@ Durante el desarrollo de estos videojuegos aprendí a:
 
 🧮 Crear sistemas de preguntas y respuestas.
 
+♻️ Diseñar experiencias educativas relacionadas con el medio ambiente.
+
 📁 Organizar proyectos utilizando GitHub.
 
 📝 Documentar proyectos de manera profesional.
@@ -436,6 +518,18 @@ Durante el desarrollo de estos videojuegos aprendí a:
 * 🏆 Crear un sistema de récords.
 * 📊 Incorporar estadísticas del jugador.
 * 🎮 Agregar más mecánicas de exploración.
+
+## ♻️ ECOHÉROES
+
+* ♻️ Agregar más tipos de residuos.
+* 🗺️ Incorporar nuevos escenarios.
+* 🎯 Añadir más niveles y rondas.
+* 🔥 Mejorar el sistema de rachas.
+* 🔊 Agregar efectos de sonido y música.
+* ✨ Mejorar las animaciones.
+* 🏆 Incorporar logros y récords.
+* 📊 Ampliar las estadísticas del jugador.
+* 🧠 Agregar más contenido educativo sobre reciclaje.
 
 ---
 
