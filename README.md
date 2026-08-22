@@ -33,7 +33,7 @@ Seguir desarrollando mis habilidades para crear videojuegos cada vez más comple
 <table>
 <tr>
 
-<td width="50%" align="center">
+<td width="33%" align="center">
 
 ## 🍎 TURBOPLATO
 
@@ -49,7 +49,7 @@ Juego arcade de acción rápida donde el jugador debe interactuar correctamente 
 
 <a href="https://pattybln.github.io/game-development-portfolio/TURBOPLATO/">
 
-<strong>🎮 JUGAR TURBOPLATO</strong>
+<strong>🎮 JUGAR</strong>
 
 </a>
 
@@ -63,7 +63,7 @@ Juego arcade de acción rápida donde el jugador debe interactuar correctamente 
 
 </td>
 
-<td width="50%" align="center">
+<td width="33%" align="center">
 
 ## 🌱 VIDA EN BALANCE
 
@@ -79,13 +79,43 @@ Videojuego de exploración donde el jugador controla un personaje, recorre un ma
 
 <a href="https://pattybln.github.io/game-development-portfolio/VIDA-EN-BALANCE/">
 
-<strong>🎮 JUGAR VIDA EN BALANCE</strong>
+<strong>🎮 JUGAR</strong>
 
 </a>
 
 <br><br>
 
 <a href="./VIDA-EN-BALANCE">
+
+📂 Ver documentación
+
+</a>
+
+</td>
+
+<td width="33%" align="center">
+
+## 💧 RETO GOTA A GOTA
+
+### Ahorro de Agua
+
+Videojuego educativo e interactivo donde el jugador debe tomar decisiones rápidas para ahorrar agua, conseguir puntos y completar diferentes retos.
+
+**🎨 Género:** Educativo / Arcade
+
+**💻 Tecnologías:** HTML5, CSS3, JavaScript
+
+<br>
+
+<a href="https://pattybln.github.io/game-development-portfolio/AGUA/">
+
+<strong>🎮 JUGAR</strong>
+
+</a>
+
+<br><br>
+
+<a href="./AGUA">
 
 📂 Ver documentación
 
@@ -174,6 +204,44 @@ VIDA EN BALANCE es un videojuego de aventura y simulación donde el jugador cont
 
 ---
 
+## 💧 RETO GOTA A GOTA
+
+<div align="center">
+
+<img src="./AGUA/agua-gameplay.png" alt="Gameplay de Reto Gota a Gota" width="850">
+
+</div>
+
+### 🎯 Descripción
+
+**Reto Gota a Gota** es un videojuego educativo e interactivo en el que el jugador debe tomar decisiones rápidas relacionadas con el ahorro de agua.
+
+El jugador debe resolver diferentes situaciones, conseguir puntos, ahorrar litros de agua, mantener rachas de respuestas correctas y completar los retos de la partida.
+
+**Género:** Educativo / Arcade / Toma de decisiones
+
+**Tecnologías:** HTML5, CSS3, JavaScript
+
+<div align="center">
+
+<a href="https://pattybln.github.io/game-development-portfolio/AGUA/">
+
+🎮 **JUGAR RETO GOTA A GOTA**
+
+</a>
+
+   
+
+<a href="./AGUA">
+
+📂 **VER DOCUMENTACIÓN**
+
+</a>
+
+</div>
+
+---
+
 # 🛠️ TECNOLOGÍAS Y HERRAMIENTAS
 
 <div align="center">
@@ -243,6 +311,8 @@ Durante el desarrollo de estos videojuegos aprendí a:
 
 🎨 Diseñar interfaces para videojuegos.
 
+💧 Diseñar experiencias educativas mediante videojuegos.
+
 📁 Organizar proyectos utilizando GitHub.
 
 📝 Documentar proyectos de manera profesional.
@@ -269,8 +339,17 @@ Durante el desarrollo de estos videojuegos aprendí a:
 * 💰 Incorporar más sistemas de recursos.
 * 🎯 Agregar nuevas decisiones.
 * ✨ Mejorar las animaciones.
-* 🔊 Añadir efectos de sonido.
+* 🔊 Agregar efectos de sonido.
 * 📖 Incorporar más situaciones y objetivos.
+
+## 💧 RETO GOTA A GOTA
+
+* 💧 Agregar más situaciones relacionadas con el ahorro de agua.
+* 🎯 Incorporar nuevos niveles de dificultad.
+* 🏆 Crear un sistema de logros.
+* 🔊 Agregar efectos de sonido y música.
+* 📊 Añadir estadísticas más completas.
+* 📚 Incorporar más consejos educativos.
 
 ---
 
@@ -279,6 +358,8 @@ Durante el desarrollo de estos videojuegos aprendí a:
 Este portafolio reúne los proyectos desarrollados durante las primeras clases de **Game Development**.
 
 El objetivo es mostrar no solamente los videojuegos terminados, sino también el proceso de aprendizaje, experimentación y evolución de cada proyecto.
+
+Cada videojuego representa una propuesta diferente y demuestra el desarrollo progresivo de mis habilidades en programación, diseño e interacción.
 
 ---
 
