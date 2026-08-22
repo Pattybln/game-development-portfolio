@@ -1,95 +1,176 @@
-# 🎮 Game Development Portfolio
+# 🎮 PQ GameForge
+
+<p align="center">
+  <strong>Game Development Portfolio</strong>
+</p>
+
+<p align="center">
+  Creando experiencias interactivas a través de código, creatividad y diseño.
+</p>
+
+---
 
 ## 👋 Sobre mí
 
 Hola, soy **Patty** y este es mi portafolio de **Game Development**.
 
-En este repositorio presento los videojuegos y prototipos que he desarrollado durante la asignatura, mostrando el proceso de creación, las mecánicas implementadas y las tecnologías utilizadas.
+Me interesa la programación, el diseño de videojuegos y la creación de experiencias interactivas. En este espacio presento los proyectos y prototipos que he desarrollado durante la asignatura de Game Development.
 
-Mi objetivo es continuar desarrollando mis habilidades en programación, diseño y creación de videojuegos.
+Mi objetivo es seguir aprendiendo y mejorar mis habilidades en programación, diseño de mecánicas, creación de escenarios e interacción con el jugador.
 
 ---
 
-## 🎮 Videojuegos
+## 🎮 Mis proyectos
+
+<table>
+<tr>
+
+<td width="50%" align="center">
+
+### 🍎 TURBOPLATO
+
+**Misión Saludable**
+
+Juego arcade de acción rápida donde el jugador debe interactuar con diferentes alimentos para conseguir la mayor puntuación posible.
+
+**Género:** Arcade
+
+**Tecnologías:** HTML, CSS, JavaScript
+
+[🎮 Ver proyecto](./TURBOPLATO)
+
+</td>
+
+<td width="50%" align="center">
+
+### 🌱 VIDA EN BALANCE
+
+**Aventura y simulación**
+
+Juego donde el jugador controla un personaje que explora un mapa y administra recursos mediante diferentes decisiones.
+
+**Género:** Adventure / Simulation
+
+**Tecnologías:** HTML, CSS, JavaScript
+
+[🎮 Ver proyecto](./VIDA-EN-BALANCE)
+
+</td>
+
+</tr>
+</table>
+
+---
+
+## 🕹️ Galería
 
 ### 🍎 TURBOPLATO – Misión Saludable
 
+![TURBOPLATO Gameplay](./TURBOPLATO/turboplato-gameplay.png)
+
+> Un juego arcade basado en velocidad y reacción. El jugador debe identificar los alimentos y conseguir la mayor puntuación antes de que termine el tiempo.
+
 **Género:** Arcade  
-**Tecnologías:** HTML, CSS y JavaScript
+**Tecnologías:** HTML5, CSS3, JavaScript
 
-Videojuego de acción rápida en el que el jugador debe interactuar con diferentes alimentos para conseguir puntos y alcanzar la mayor puntuación posible.
-
-**Mecánica principal:**
-- Cortar alimentos que aparecen en pantalla.
-- Conseguir puntos.
-- Evitar alimentos que reducen la puntuación.
-- Superar el desafío antes de que termine el tiempo.
-
-📁 [Ver proyecto TURBOPLATO](./TURBOPLATO)
+[🎮 Ver TURBOPLATO](./TURBOPLATO)
 
 ---
 
 ### 🌱 VIDA EN BALANCE
 
-**Género:** Aventura / Simulación  
-**Tecnologías:** HTML, CSS y JavaScript
+![VIDA EN BALANCE Gameplay](./VIDA-EN-BALANCE/vida-en-balance-gameplay.png)
 
-Videojuego en el que el jugador controla un personaje que puede desplazarse por un mapa y tomar decisiones relacionadas con la administración de recursos.
+> Un videojuego de exploración y simulación donde el jugador controla un personaje, recorre un mapa y administra diferentes recursos.
 
-**Mecánica principal:**
-- Movimiento del personaje mediante el teclado.
-- Exploración del mapa.
-- Interacción con diferentes elementos.
-- Administración de recursos.
-- Toma de decisiones.
+**Género:** Adventure / Simulation  
+**Tecnologías:** HTML5, CSS3, JavaScript
 
-📁 [Ver proyecto VIDA EN BALANCE](./VIDA-EN-BALANCE)
+[🎮 Ver VIDA EN BALANCE](./VIDA-EN-BALANCE)
 
 ---
 
-## 🛠️ Tecnologías utilizadas
+## 🛠️ Tecnologías
 
-- HTML5
-- CSS3
-- JavaScript
-- GitHub
-- Visual Studio Code
+<p align="center">
+
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+
+![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)
+
+![Visual Studio Code](https://img.shields.io/badge/Visual%20Studio%20Code-007ACC?style=for-the-badge&logo=visual-studio-code&logoColor=white)
+
+</p>
 
 ---
 
-## 🎯 Objetivo del portafolio
+## 🤖 Uso de Inteligencia Artificial
 
-Este portafolio reúne los proyectos desarrollados durante la asignatura de **Game Development** y muestra mi proceso de aprendizaje en el desarrollo de videojuegos.
+Durante el desarrollo de los proyectos se utilizó **Inteligencia Artificial como herramienta de apoyo** para:
+
+- Generación y mejora de ideas.
+- Apoyo en la programación.
+- Corrección de errores.
+- Propuestas para mejorar las mecánicas.
+- Diseño y organización de elementos visuales.
+
+La IA fue utilizada como herramienta de apoyo durante el proceso creativo y de desarrollo, mientras que los proyectos fueron probados y adaptados para cumplir con los objetivos de la práctica.
 
 ---
 
-## 📚 Aprendizajes
+## 📚 ¿Qué aprendí?
 
-Durante el desarrollo de estos proyectos trabajé en:
+Durante el desarrollo de estos videojuegos aprendí a:
 
-- Diseño de mecánicas de videojuegos.
-- Programación de interacciones.
-- Diseño de interfaces.
-- Creación de escenarios.
-- Sistemas de puntuación.
-- Movimiento de personajes.
-- Organización y publicación de proyectos en GitHub.
+- Diseñar mecánicas de juego.
+- Crear interfaces interactivas.
+- Programar eventos y acciones del jugador.
+- Implementar sistemas de puntuación.
+- Crear movimiento de personajes.
+- Diseñar escenarios.
+- Organizar proyectos en GitHub.
+- Documentar videojuegos.
+- Mejorar proyectos mediante pruebas.
 
 ---
 
 ## 🚀 Próximas mejoras
 
-Entre las mejoras que me gustaría realizar se encuentran:
+### TURBOPLATO
 
-- Mejorar los gráficos.
-- Agregar nuevas mecánicas.
-- Incorporar más niveles.
+- Agregar más alimentos.
+- Incorporar diferentes niveles.
 - Mejorar las animaciones.
 - Agregar efectos de sonido.
-- Mejorar la experiencia del jugador.
+- Incorporar nuevos desafíos.
+
+### VIDA EN BALANCE
+
+- Ampliar el mapa.
+- Agregar nuevas zonas.
+- Incorporar más interacciones.
+- Añadir nuevas decisiones.
+- Mejorar las animaciones.
+- Agregar efectos de sonido.
 
 ---
 
-## ⭐ Gracias por visitar mi portafolio
+## 🎯 Objetivo del portafolio
 
-Este repositorio representa mi proceso de aprendizaje y desarrollo dentro de la asignatura de **Game Development**.
+Este portafolio tiene como objetivo presentar de manera organizada y visual los proyectos desarrollados durante las primeras clases de **Game Development**.
+
+Cada proyecto representa una parte del proceso de aprendizaje y experimentación en el desarrollo de videojuegos.
+
+---
+
+<p align="center">
+
+### 🎮 PQ GameForge
+
+**Code • Create • Play**
+
+</p>
