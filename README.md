@@ -1,20 +1,14 @@
-# 🎮 PQ GAMEFORGE
+<div align="center">
 
-<p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:111827,100:2563EB&height=180&section=header&text=PQ%20GAMEFORGE&fontSize=48&fontColor=FFFFFF&animation=fadeIn&fontAlignY=38" alt="PQ GameForge">
-</p>
+<img src="https://capsule-render.vercel.app/api?type=rect&color=111111&height=200&section=header&text=PQ%20GAMEFORGE&fontSize=52&fontColor=FFFFFF&animation=fadeIn" alt="PQ GameForge">
 
-<p align="center">
-  <strong>🎮 GAME DEVELOPMENT PORTFOLIO</strong>
-</p>
+# 🎮 Game Development Portfolio
 
-<p align="center">
-  <em>Code • Create • Play</em>
-</p>
+**Code • Create • Play**
 
-<p align="center">
-  Un espacio donde la programación y la creatividad se convierten en experiencias jugables.
-</p>
+Creando experiencias interactivas a través de código, creatividad y diseño.
+
+</div>
 
 ---
 
@@ -32,129 +26,164 @@ Seguir desarrollando mis habilidades para crear videojuegos cada vez más comple
 
 ---
 
-## 🕹️ PROYECTOS DESTACADOS
+# 🎮 PROYECTOS DESTACADOS
+
+<div align="center">
 
 <table>
 <tr>
 
 <td width="50%" align="center">
 
-<h3>🍎 TURBOPLATO</h3>
+## 🍎 TURBOPLATO
 
-<strong>Misión Saludable</strong>
+### Misión Saludable
 
-<p>
-Juego arcade de acción rápida donde el jugador debe identificar e interactuar con diferentes alimentos para conseguir la mayor puntuación posible.
-</p>
+Juego arcade de acción rápida donde el jugador debe interactuar correctamente con diferentes alimentos para conseguir la mayor puntuación posible.
 
-<p><strong>🎨 Género:</strong> Arcade</p>
+**🎨 Género:** Arcade
 
-<p><strong>💻 Tecnologías:</strong><br>
-HTML5 • CSS3 • JavaScript</p>
+**💻 Tecnologías:** HTML5, CSS3, JavaScript
 
-<p>
+<br>
+
 <a href="https://pattybln.github.io/game-development-portfolio/TURBOPLATO/">
-🎮 JUGAR
-</a>
-</p>
 
-<p>
-<a href="./TURBOPLATO">
-📂 DOCUMENTACIÓN
+<strong>🎮 JUGAR TURBOPLATO</strong>
+
 </a>
-</p>
+
+<br><br>
+
+<a href="./TURBOPLATO">
+
+📂 Ver documentación
+
+</a>
 
 </td>
 
 <td width="50%" align="center">
 
-<h3>🌱 VIDA EN BALANCE</h3>
+## 🌱 VIDA EN BALANCE
 
-<strong>Aventura y Simulación</strong>
+### Aventura y Simulación
 
-<p>
 Videojuego de exploración donde el jugador controla un personaje, recorre un mapa y administra recursos mediante diferentes decisiones.
-</p>
 
-<p><strong>🎨 Género:</strong> Adventure / Simulation</p>
+**🎨 Género:** Adventure / Simulation
 
-<p><strong>💻 Tecnologías:</strong><br>
-HTML5 • CSS3 • JavaScript</p>
+**💻 Tecnologías:** HTML5, CSS3, JavaScript
 
-<p>
+<br>
+
 <a href="https://pattybln.github.io/game-development-portfolio/VIDA-EN-BALANCE/">
-🎮 JUGAR
-</a>
-</p>
 
-<p>
-<a href="./VIDA-EN-BALANCE">
-📂 DOCUMENTACIÓN
+<strong>🎮 JUGAR VIDA EN BALANCE</strong>
+
 </a>
-</p>
+
+<br><br>
+
+<a href="./VIDA-EN-BALANCE">
+
+📂 Ver documentación
+
+</a>
 
 </td>
 
 </tr>
 </table>
 
+</div>
+
 ---
 
-# 🎞️ GALERÍA
+# 🕹️ GALERÍA
 
 ## 🍎 TURBOPLATO — MISIÓN SALUDABLE
 
-<p align="center">
-  <img src="./TURBOPLATO/turboplato-gameplay.png" alt="Gameplay de TURBOPLATO" width="850">
-</p>
+<div align="center">
 
-> ⚡ Un juego arcade basado en velocidad, reacción y puntuación. El jugador debe interactuar correctamente con los alimentos y evitar aquellos que perjudican su puntuación.
+<img src="./TURBOPLATO/turboplato-gameplay.png" alt="Gameplay de TURBOPLATO" width="850">
+
+</div>
+
+### 🎯 Descripción
+
+TURBOPLATO es un videojuego arcade basado en velocidad y reacción. El jugador debe identificar los alimentos que aparecen en pantalla e interactuar con ellos para conseguir la mayor puntuación posible.
 
 **Género:** Arcade
+
 **Tecnologías:** HTML5, CSS3, JavaScript
 
-<p align="center">
-  <a href="https://pattybln.github.io/game-development-portfolio/TURBOPLATO/">
-    🎮 <strong>JUGAR TURBOPLATO</strong>
-  </a>
-  &nbsp;&nbsp;|&nbsp;&nbsp;
-  <a href="./TURBOPLATO">
-    📂 <strong>VER DOCUMENTACIÓN</strong>
-  </a>
-</p>
+<div align="center">
+
+<a href="https://pattybln.github.io/game-development-portfolio/TURBOPLATO/">
+
+🎮 **JUGAR TURBOPLATO**
+
+</a>
+
+   
+
+<a href="./TURBOPLATO">
+
+📂 **VER DOCUMENTACIÓN**
+
+</a>
+
+</div>
 
 ---
 
 ## 🌱 VIDA EN BALANCE
 
-<p align="center">
-  <img src="./VIDA-EN-BALANCE/vida-en-balance-gameplay.png" alt="Gameplay de VIDA EN BALANCE" width="850">
-</p>
+<div align="center">
 
-> 🗺️ Un videojuego de aventura y simulación donde el jugador puede explorar un mapa, controlar un personaje y administrar diferentes recursos.
+<img src="./VIDA-EN-BALANCE/vida-en-balance-gameplay.png" alt="Gameplay de VIDA EN BALANCE" width="850">
+
+</div>
+
+### 🎯 Descripción
+
+VIDA EN BALANCE es un videojuego de aventura y simulación donde el jugador controla un personaje, explora un mapa y administra diferentes recursos mediante sus decisiones.
 
 **Género:** Adventure / Simulation
+
 **Tecnologías:** HTML5, CSS3, JavaScript
 
-<p align="center">
-  <a href="https://pattybln.github.io/game-development-portfolio/VIDA-EN-BALANCE/">
-    🎮 <strong>JUGAR VIDA EN BALANCE</strong>
-  </a>
-  &nbsp;&nbsp;|&nbsp;&nbsp;
-  <a href="./VIDA-EN-BALANCE">
-    📂 <strong>VER DOCUMENTACIÓN</strong>
-  </a>
-</p>
+<div align="center">
+
+<a href="https://pattybln.github.io/game-development-portfolio/VIDA-EN-BALANCE/">
+
+🎮 **JUGAR VIDA EN BALANCE**
+
+</a>
+
+   
+
+<a href="./VIDA-EN-BALANCE">
+
+📂 **VER DOCUMENTACIÓN**
+
+</a>
+
+</div>
 
 ---
 
 # 🛠️ TECNOLOGÍAS Y HERRAMIENTAS
 
+<div align="center">
+
 <table>
 <tr>
-<td width="50%">
 
-### 💻 Desarrollo
+<td width="50%" valign="top">
+
+### 💻 DESARROLLO
 
 | Tecnología     | Uso                             |
 | -------------- | ------------------------------- |
@@ -164,32 +193,35 @@ HTML5 • CSS3 • JavaScript</p>
 
 </td>
 
-<td width="50%">
+<td width="50%" valign="top">
 
-### 🧰 Herramientas
+### 🧰 HERRAMIENTAS
 
-| Herramienta            | Uso                       |
-| ---------------------- | ------------------------- |
-| **Visual Studio Code** | Desarrollo y edición      |
-| **GitHub**             | Control y almacenamiento  |
-| **GitHub Pages**       | Publicación de los juegos |
+| Herramienta            | Uso                            |
+| ---------------------- | ------------------------------ |
+| **Visual Studio Code** | Desarrollo y edición           |
+| **GitHub**             | Almacenamiento y organización  |
+| **GitHub Pages**       | Publicación de los videojuegos |
 
 </td>
+
 </tr>
 </table>
+
+</div>
 
 ---
 
 # 🤖 INTELIGENCIA ARTIFICIAL
 
-Durante el desarrollo de los proyectos utilicé **Inteligencia Artificial como herramienta de apoyo** para:
+Durante el desarrollo de los proyectos se utilizó **Inteligencia Artificial como herramienta de apoyo** para:
 
 * 💡 Generación y mejora de ideas.
 * 💻 Apoyo en programación.
 * 🔧 Corrección y mejora de código.
 * 🎮 Propuestas para las mecánicas.
 * 🎨 Ideas para interfaces y elementos visuales.
-* 📝 Organización y documentación de los proyectos.
+* 📝 Organización y documentación.
 
 La IA fue utilizada como herramienta de apoyo durante el proceso creativo y de desarrollo. Los proyectos fueron **probados, modificados y adaptados** para cumplir con los objetivos planteados.
 
@@ -250,18 +282,14 @@ El objetivo es mostrar no solamente los videojuegos terminados, sino también el
 
 ---
 
-<p align="center">
+<div align="center">
 
-## 🎮 PQ GAMEFORGE
+<img src="https://capsule-render.vercel.app/api?type=rect&color=111111&height=100&section=footer&text=PQ%20GAMEFORGE&fontSize=28&fontColor=FFFFFF" alt="PQ GameForge">
 
-<strong>CODE • CREATE • PLAY</strong>
+### 🎮 PQ GAMEFORGE
 
-<br><br>
+**CODE • CREATE • PLAY**
 
 ⭐ Gracias por visitar mi portafolio ⭐
 
-</p>
-
-<p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:2563EB,100:111827&height=120&section=footer" alt="Footer">
-</p>
+</div>
