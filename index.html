@@ -1,0 +1,2066 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="Portafolio de desarrollo de videojuegos - proyectos, juegos educativos y experiencias interactivas.">
+
+    <title>Game Dev Portfolio ♡</title>
+
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,700;1,700&display=swap"
+        rel="stylesheet">
+
+    <!-- BOOTSTRAP ICONS -->
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- ==============================
+         CSS
+    =============================== -->
+    <style>
+
+        :root {
+            --pink: #ff8ec4;
+            --hot-pink: #f25aa0;
+            --soft-pink: #ffd0e8;
+            --lilac: #c4a8ff;
+            --purple: #9b7bff;
+            --soft-purple: #2e2142;
+            --cream: #f8f0ff;
+            --dark: #1a1225;
+            --gray: #b9a8c9;
+            --border: rgba(184, 156, 255, 0.18);
+            --white: #ffffff;
+            --shadow: 0 25px 60px rgba(0, 0, 0, 0.45);
+            --shadow-hover: 0 35px 90px rgba(155, 123, 255, 0.25);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background: #1a1225;
+            color: var(--cream);
+            font-family: "DM Sans", sans-serif;
+            overflow-x: hidden;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        button {
+            font-family: inherit;
+        }
+
+        /* CURSOR */
+
+        .cursor-glow {
+            width: 250px;
+            height: 250px;
+            position: fixed;
+            pointer-events: none;
+            z-index: 999;
+            border-radius: 50%;
+            background: radial-gradient(
+                circle,
+                rgba(155, 123, 255, 0.22),
+                rgba(242, 90, 160, 0.08),
+                transparent 70%
+            );
+            transform: translate(-50%, -50%);
+            transition: opacity 0.3s;
+        }
+
+        /* PARTICLES */
+
+        .particles span {
+            position: fixed;
+            z-index: 5;
+            pointer-events: none;
+            color: var(--pink);
+            opacity: 0.45;
+            animation: floating 5s ease-in-out infinite;
+        }
+
+        .particles span:nth-child(1) {
+            left: 4%;
+            top: 20%;
+            animation-delay: 0s;
+        }
+
+        .particles span:nth-child(2) {
+            right: 5%;
+            top: 35%;
+            animation-delay: 1s;
+        }
+
+        .particles span:nth-child(3) {
+            left: 9%;
+            top: 60%;
+            animation-delay: 2s;
+        }
+
+        .particles span:nth-child(4) {
+            right: 10%;
+            top: 70%;
+            animation-delay: 3s;
+        }
+
+        .particles span:nth-child(5) {
+            left: 30%;
+            top: 90%;
+            animation-delay: 1.5s;
+        }
+
+        .particles span:nth-child(6) {
+            right: 30%;
+            top: 10%;
+            animation-delay: 2.5s;
+        }
+
+        .particles span:nth-child(7) {
+            left: 50%;
+            top: 40%;
+            animation-delay: 1s;
+        }
+
+        .particles span:nth-child(8) {
+            right: 45%;
+            top: 80%;
+            animation-delay: 3s;
+        }
+
+        @keyframes floating {
+
+            0%,
+            100% {
+                transform: translateY(0) rotate(0deg);
+            }
+
+            50% {
+                transform: translateY(-14px) rotate(8deg);
+            }
+        }
+
+        /* HERO */
+
+        .hero {
+            min-height: 720px;
+            position: relative;
+            overflow: hidden;
+            padding: 28px clamp(24px, 6vw, 90px) 100px;
+
+            background:
+                radial-gradient(
+                    circle at 80% 15%,
+                    rgba(92, 61, 158, 0.45),
+                    transparent 35%
+                ),
+                linear-gradient(
+                    135deg,
+                    #1a1225,
+                    #2a1a3d
+                );
+
+            border-bottom: 1px solid rgba(155, 123, 255, 0.12);
+        }
+
+        /* NAVBAR */
+
+        .navbar {
+            max-width: 1280px;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: relative;
+            z-index: 20;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+            font-size: 14px;
+            font-weight: 800;
+            letter-spacing: 0.12em;
+            color: var(--cream);
+        }
+
+        .logo span {
+            color: var(--hot-pink);
+        }
+
+        .logo i {
+            color: var(--pink);
+            font-size: 11px;
+            animation: heartbeat 1.8s infinite;
+        }
+
+        @keyframes heartbeat {
+
+            0%,
+            100% {
+                transform: scale(1);
+            }
+
+            15% {
+                transform: scale(1.3);
+            }
+
+            30% {
+                transform: scale(1);
+            }
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 30px;
+        }
+
+        .nav-links a {
+            color: var(--gray);
+            font-size: 13px;
+            font-weight: 600;
+            transition: 0.25s;
+        }
+
+        .nav-links a:hover {
+            color: var(--hot-pink);
+            transform: translateY(-2px);
+        }
+
+        .nav-button {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 10px 17px;
+            border: 1px solid rgba(155, 123, 255, 0.35);
+            border-radius: 999px;
+            background: rgba(36, 24, 51, 0.7);
+            font-size: 13px;
+            font-weight: 800;
+            transition: 0.3s;
+            color: var(--cream);
+        }
+
+        .nav-button:hover {
+            color: white;
+            background: var(--purple);
+            border-color: var(--purple);
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba(155, 123, 255, 0.35);
+        }
+
+        /* HERO CONTENT */
+
+        .hero-content {
+            max-width: 1280px;
+            margin: 120px auto 0;
+            position: relative;
+            z-index: 10;
+        }
+
+        .eyebrow {
+            display: flex;
+            align-items: center;
+            gap: 7px;
+            margin-bottom: 17px;
+            color: var(--hot-pink);
+            font-size: 11px;
+            font-weight: 800;
+            letter-spacing: 0.2em;
+        }
+
+        .eyebrow i {
+            font-size: 14px;
+            animation: sparkle 2s infinite;
+        }
+
+        @keyframes sparkle {
+
+            0%,
+            100% {
+                transform: rotate(0) scale(1);
+            }
+
+            50% {
+                transform: rotate(15deg) scale(1.2);
+            }
+        }
+
+        .hero h1 {
+            max-width: 900px;
+            margin-bottom: 25px;
+            font-family: "Playfair Display", serif;
+            font-size: clamp(55px, 8vw, 108px);
+            line-height: 0.9;
+            letter-spacing: -0.045em;
+            color: var(--cream);
+            animation: heroTitle 1s ease both;
+        }
+
+        .hero h1 em {
+            color: var(--lilac);
+            font-style: italic;
+        }
+
+        @keyframes heroTitle {
+
+            from {
+                opacity: 0;
+                transform: translateY(35px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .hero-description {
+            max-width: 520px;
+            color: var(--gray);
+            font-size: 17px;
+            line-height: 1.7;
+            animation: fadeUp 1s 0.2s ease both;
+        }
+
+        @keyframes fadeUp {
+
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* BOTONES */
+
+        .hero-buttons {
+            display: flex;
+            gap: 12px;
+            align-items: center;
+            margin-top: 20px;
+            animation: fadeUp 1s 0.35s ease both;
+        }
+
+        .main-button {
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            padding: 15px 21px;
+            color: white;
+            background: linear-gradient(
+                135deg,
+                var(--hot-pink),
+                var(--lilac)
+            );
+            border-radius: 999px;
+            font-size: 13px;
+            font-weight: 800;
+            box-shadow: 0 12px 30px rgba(242, 90, 160, 0.3);
+            transition: 0.3s;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .main-button:hover {
+            transform: translateY(-4px) scale(1.03);
+            box-shadow: 0 18px 40px rgba(242, 90, 160, 0.4);
+        }
+
+        .main-button i {
+            transition: 0.3s;
+        }
+
+        .main-button:hover i {
+            transform: translate(3px, -3px);
+        }
+
+        .secondary-button {
+            display: inline-flex;
+            align-items: center;
+            gap: 9px;
+            padding: 14px 18px;
+            color: var(--lilac);
+            border: 1px solid rgba(155, 123, 255, 0.4);
+            border-radius: 999px;
+            background: rgba(36, 24, 51, 0.6);
+            font-size: 13px;
+            font-weight: 700;
+            transition: 0.3s;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .secondary-button:hover {
+            background: rgba(155, 123, 255, 0.2);
+            transform: translateY(-3px);
+            box-shadow: var(--shadow);
+        }
+
+        /* DECORACIONES */
+
+        .hero-orbit {
+            position: absolute;
+            border: 1px solid rgba(155, 123, 255, 0.25);
+            border-radius: 50%;
+            pointer-events: none;
+        }
+
+        .orbit-one {
+            width: 650px;
+            height: 650px;
+            right: -100px;
+            top: 70px;
+            animation: orbitPulse 5s infinite;
+        }
+
+        .orbit-two {
+            width: 450px;
+            height: 450px;
+            right: 0;
+            top: 170px;
+            animation: orbitPulse 5s 1s infinite;
+        }
+
+        @keyframes orbitPulse {
+
+            0%,
+            100% {
+                transform: scale(1);
+                opacity: 0.45;
+            }
+
+            50% {
+                transform: scale(1.04);
+                opacity: 0.8;
+            }
+        }
+
+        .hero-heart {
+            position: absolute;
+            right: 17%;
+            top: 34%;
+            width: 90px;
+            height: 90px;
+            display: grid;
+            place-items: center;
+            color: white;
+            background: linear-gradient(
+                135deg,
+                var(--pink),
+                var(--hot-pink)
+            );
+            border-radius: 50%;
+            font-size: 32px;
+            box-shadow: var(--shadow);
+            transform: rotate(10deg);
+            animation: floating 4s ease-in-out infinite;
+            z-index: 5;
+        }
+
+        .hero-star {
+            position: absolute;
+            right: 7%;
+            bottom: 17%;
+            width: 62px;
+            height: 62px;
+            display: grid;
+            place-items: center;
+            color: white;
+            background: var(--purple);
+            border-radius: 50%;
+            font-size: 24px;
+            animation: floating 4s 1s ease-in-out infinite;
+            z-index: 5;
+        }
+
+        /* MAIN */
+
+        main {
+            max-width: 1280px;
+            margin: auto;
+            padding: 90px clamp(24px, 5vw, 80px);
+        }
+
+        /* BANNER */
+
+        .banner {
+            min-height: 480px;
+            position: relative;
+            overflow: hidden;
+            margin-bottom: 110px;
+            border-radius: 35px;
+            box-shadow: 0 30px 80px rgba(0, 0, 0, 0.5);
+            animation: bannerAppear 1s ease both;
+        }
+
+        .banner img {
+            width: 100%;
+            height: 480px;
+            display: block;
+            object-fit: cover;
+            transition: transform 1.2s ease;
+        }
+
+        .banner:hover img {
+            transform: scale(1.04);
+        }
+
+        .banner::after {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(
+                90deg,
+                rgba(26, 18, 37, 0.88),
+                rgba(92, 61, 158, 0.4),
+                transparent
+            );
+            pointer-events: none;
+        }
+
+        @keyframes bannerAppear {
+
+            from {
+                opacity: 0;
+                transform: translateY(35px) scale(0.97);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0) scale(1);
+            }
+        }
+
+        .banner-overlay {
+            position: absolute;
+            z-index: 4;
+            left: 7%;
+            top: 50%;
+            transform: translateY(-50%);
+            max-width: 600px;
+            color: white;
+        }
+
+        .banner-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 9px;
+            padding: 9px 15px;
+            border: 1px solid rgba(255, 255, 255, 0.25);
+            border-radius: 999px;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            font-size: 10px;
+            font-weight: 800;
+            letter-spacing: 0.15em;
+        }
+
+        .banner-overlay h2 {
+            margin: 20px 0;
+            font-family: "Playfair Display", serif;
+            font-size: clamp(42px, 6vw, 78px);
+            line-height: 0.95;
+            letter-spacing: -0.04em;
+        }
+
+        .banner-overlay h2 em {
+            display: block;
+            color: var(--soft-pink);
+            font-style: italic;
+        }
+
+        .banner-overlay p {
+            max-width: 450px;
+            margin-bottom: 25px;
+            color: rgba(255, 255, 255, 0.85);
+            line-height: 1.7;
+        }
+
+        .banner-button {
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            padding: 14px 20px;
+            color: var(--dark);
+            background: white;
+            border-radius: 999px;
+            font-size: 13px;
+            font-weight: 800;
+            transition: 0.3s;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .banner-button:hover {
+            transform: translateY(-4px) scale(1.03);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.35);
+        }
+
+        /* INTRO */
+
+        .games-intro {
+            display: flex;
+            justify-content: space-between;
+            align-items: end;
+            gap: 30px;
+            margin-bottom: 42px;
+        }
+
+        .section-label {
+            display: flex;
+            align-items: center;
+            gap: 7px;
+            margin-bottom: 14px;
+            color: var(--hot-pink);
+            font-size: 11px;
+            font-weight: 800;
+            letter-spacing: 0.2em;
+        }
+
+        .games-intro h2,
+        .about-section h2 {
+            font-family: "Playfair Display", serif;
+            font-size: clamp(45px, 6vw, 76px);
+            line-height: 0.95;
+            letter-spacing: -0.04em;
+            color: var(--cream);
+        }
+
+        .games-intro h2 span {
+            color: var(--pink);
+            font-size: 0.5em;
+        }
+
+        .intro-text {
+            max-width: 360px;
+            color: var(--gray);
+            font-size: 14px;
+            line-height: 1.7;
+        }
+
+        /* GRID */
+
+        .games-grid {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 28px;
+        }
+
+        /* CARD */
+
+        .game-card {
+            position: relative;
+            overflow: hidden;
+            background: #241833;
+            border: 1px solid var(--border);
+            border-radius: 28px;
+            box-shadow: var(--shadow);
+            transition:
+                transform 0.35s ease,
+                box-shadow 0.35s ease,
+                background 0.35s ease;
+        }
+
+        .game-card:hover {
+            transform: translateY(-10px) rotate(0.3deg);
+            background: #2e2142;
+            box-shadow: var(--shadow-hover);
+        }
+
+        /* IMAGE */
+
+        .game-image {
+            height: 340px;
+            position: relative;
+            overflow: hidden;
+            background: #1f1529;
+        }
+
+        .game-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+            transition: transform 0.6s ease;
+        }
+
+        .game-card:hover .game-image img {
+            transform: scale(1.07);
+        }
+
+        .game-number,
+        .game-tag {
+            position: absolute;
+            top: 18px;
+            z-index: 4;
+            padding: 8px 11px;
+            color: white;
+            background: rgba(26, 18, 37, 0.75);
+            border-radius: 999px;
+            backdrop-filter: blur(8px);
+            font-size: 10px;
+            font-weight: 800;
+            letter-spacing: 0.08em;
+        }
+
+        .game-number {
+            left: 18px;
+        }
+
+        .game-tag {
+            right: 18px;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        /* SHINE */
+
+        .image-shine {
+            position: absolute;
+            width: 80px;
+            height: 200%;
+            left: -150px;
+            top: -50%;
+            background: linear-gradient(
+                90deg,
+                transparent,
+                rgba(255, 255, 255, 0.35),
+                transparent
+            );
+            transform: rotate(25deg);
+            transition: left 0.8s ease;
+        }
+
+        .game-card:hover .image-shine {
+            left: 130%;
+        }
+
+        /* GAME INFO */
+
+        .game-info {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 23px 25px 27px;
+            gap: 20px;
+        }
+
+        .game-type {
+            margin-bottom: 7px;
+            color: var(--hot-pink);
+            font-size: 9px;
+            font-weight: 800;
+            letter-spacing: 0.16em;
+        }
+
+        .game-info h3 {
+            font-size: 22px;
+            letter-spacing: -0.02em;
+            color: var(--cream);
+        }
+
+        .game-description {
+            margin-top: 10px;
+            color: var(--gray);
+            font-size: 13px;
+            line-height: 1.7;
+        }
+
+        .game-arrow {
+            width: 47px;
+            height: 47px;
+            min-width: 47px;
+            display: grid;
+            place-items: center;
+            color: white;
+            background: #3d2a6e;
+            border-radius: 50%;
+            font-size: 19px;
+            transition: 0.3s;
+        }
+
+        .game-arrow:hover {
+            color: white;
+            background: var(--hot-pink);
+            transform: rotate(10deg) scale(1.08);
+        }
+
+        /* ABOUT */
+
+        .about-section {
+            margin-top: 120px;
+            padding: 58px;
+            display: grid;
+            grid-template-columns: 180px 1fr;
+            gap: 55px;
+            align-items: center;
+            color: white;
+            border-radius: 35px;
+            background:
+                linear-gradient(
+                    120deg,
+                    #4a2d7a,
+                    #7c3a9e 50%,
+                    #c45a9a
+                );
+            box-shadow: 0 28px 70px rgba(0, 0, 0, 0.4);
+        }
+
+        .about-section .section-label {
+            color: var(--soft-pink);
+        }
+
+        .about-section h2 {
+            margin-bottom: 25px;
+        }
+
+        .about-section h2 em {
+            color: white;
+        }
+
+        .about-text {
+            max-width: 600px;
+            color: rgba(255, 255, 255, 0.86);
+            line-height: 1.8;
+            margin-bottom: 15px;
+        }
+
+        .about-badge {
+            width: 155px;
+            height: 155px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 4px;
+            border: 1px solid rgba(255, 255, 255, 0.4);
+            border-radius: 50%;
+            transform: rotate(-9deg);
+            animation: floating 5s ease-in-out infinite;
+        }
+
+        .about-badge i {
+            font-size: 30px;
+            margin-bottom: 5px;
+        }
+
+        .about-badge span {
+            font-size: 13px;
+            font-weight: 800;
+            letter-spacing: 0.1em;
+        }
+
+        /* REVEAL */
+
+        .reveal {
+            opacity: 0;
+            transform: translateY(40px);
+            transition:
+                opacity 0.8s ease,
+                transform 0.8s ease;
+        }
+
+        .reveal.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* FOOTER */
+
+        footer {
+            max-width: 1280px;
+            margin: auto;
+            padding: 0 80px 35px;
+            display: flex;
+            justify-content: space-between;
+            color: var(--gray);
+            font-size: 9px;
+            font-weight: 800;
+            letter-spacing: 0.15em;
+        }
+
+        footer i {
+            color: var(--pink);
+            margin-right: 4px;
+        }
+
+        /* RIPPLE */
+
+        .ripple {
+            position: absolute;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.4);
+            transform: scale(0);
+            animation: ripple-anim 0.6s linear;
+            pointer-events: none;
+            width: 30px;
+            height: 30px;
+            margin-left: -15px;
+            margin-top: -15px;
+        }
+
+        @keyframes ripple-anim {
+
+            to {
+                transform: scale(4);
+                opacity: 0;
+            }
+        }
+
+        /* RESPONSIVE */
+
+        @media (max-width: 900px) {
+
+            .nav-links {
+                display: none;
+            }
+
+            .hero {
+                min-height: 680px;
+            }
+
+            .hero-content {
+                margin-top: 100px;
+            }
+
+            .hero-heart {
+                right: 8%;
+                top: 27%;
+                width: 70px;
+                height: 70px;
+                font-size: 25px;
+            }
+
+            .hero-star {
+                right: 5%;
+                bottom: 10%;
+            }
+
+            .games-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .games-intro {
+                display: block;
+            }
+
+            .intro-text {
+                margin-top: 20px;
+            }
+
+            .about-section {
+                grid-template-columns: 1fr;
+                padding: 40px;
+            }
+        }
+
+        @media (max-width: 600px) {
+
+            .hero {
+                padding: 22px 20px 80px;
+            }
+
+            .nav-button {
+                display: none;
+            }
+
+            .hero-content {
+                margin-top: 85px;
+            }
+
+            .hero h1 {
+                font-size: 55px;
+            }
+
+            .hero-description {
+                font-size: 15px;
+            }
+
+            .hero-buttons {
+                flex-wrap: wrap;
+            }
+
+            .banner {
+                min-height: 520px;
+                margin-bottom: 80px;
+                border-radius: 25px;
+            }
+
+            .banner img {
+                height: 520px;
+            }
+
+            .banner-overlay {
+                left: 25px;
+                right: 25px;
+            }
+
+            .banner-overlay h2 {
+                font-size: 48px;
+            }
+
+            main {
+                padding: 70px 20px;
+            }
+
+            .game-image {
+                height: 280px;
+            }
+
+            .game-info {
+                padding: 20px;
+            }
+
+            .about-section {
+                margin-top: 80px;
+                padding: 32px;
+                border-radius: 25px;
+            }
+
+            footer {
+                padding: 0 20px 25px;
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            .cursor-glow {
+                display: none;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <!-- CURSOR GLOW -->
+    <div class="cursor-glow"></div>
+
+    <!-- PARTICULAS -->
+    <div class="particles">
+        <span>✦</span>
+        <span>♡</span>
+        <span>✧</span>
+        <span>✦</span>
+        <span>♡</span>
+        <span>✧</span>
+        <span>✦</span>
+        <span>♡</span>
+    </div>
+
+    <!-- =====================================
+         NAVBAR + HERO
+    ====================================== -->
+
+    <header class="hero">
+
+        <nav class="navbar">
+
+            <a href="#" class="logo">
+                GAME
+                <span>DEV</span>
+                <i class="bi bi-heart-fill"></i>
+            </a>
+
+            <div class="nav-links">
+
+                <a href="#juegos">
+                    Juegos
+                </a>
+
+                <a href="#sobre-mi">
+                    Sobre el portfolio
+                </a>
+
+            </div>
+
+            <a href="#juegos" class="nav-button">
+
+                <i class="bi bi-controller"></i>
+
+                Mis juegos
+
+            </a>
+
+        </nav>
+
+        <!-- HERO -->
+
+        <div class="hero-content">
+
+            <div class="hero-text">
+
+                <p class="eyebrow">
+
+                    <i class="bi bi-stars"></i>
+
+                    CREATIVE GAME DEVELOPMENT
+
+                </p>
+
+                <h1>
+
+                    Pequeños mundos,
+
+                    <br>
+
+                    <em>grandes aventuras.</em>
+
+                </h1>
+
+                <p class="hero-description">
+
+                    Un pequeño rincón donde guardo mis
+                    videojuegos, ideas y proyectos creados
+                    con creatividad, curiosidad y mucho
+                    cariño.
+
+                </p>
+
+                <div class="hero-buttons">
+
+                    <a href="#juegos" class="main-button">
+
+                        Ver mis juegos
+
+                        <i class="bi bi-arrow-down-right"></i>
+
+                    </a>
+
+                    <a href="#banner" class="secondary-button">
+
+                        <i class="bi bi-stars"></i>
+
+                        Explorar
+
+                    </a>
+
+                </div>
+
+            </div>
+
+            <div class="hero-orbit orbit-one"></div>
+            <div class="hero-orbit orbit-two"></div>
+
+            <div class="hero-heart">
+                <i class="bi bi-heart-fill"></i>
+            </div>
+
+            <div class="hero-star">
+                <i class="bi bi-stars"></i>
+            </div>
+
+        </div>
+
+    </header>
+
+    <!-- MAIN -->
+
+    <main>
+
+        <!-- BANNER -->
+
+        <section class="banner reveal" id="banner">
+
+            <img
+                src="assets/images.png"
+                alt="Banner del portafolio">
+
+            <div class="banner-overlay">
+
+                <span class="banner-badge">
+
+                    <i class="bi bi-controller"></i>
+
+                    GAME DEVELOPER
+
+                </span>
+
+                <h2>
+
+                    Creando mundos
+
+                    <em>que cobran vida.</em>
+
+                </h2>
+
+                <p>
+
+                    Explora mis proyectos,
+                    descubre mis juegos y
+                    conoce mi trabajo.
+
+                </p>
+
+                <a href="#juegos" class="banner-button">
+
+                    Explorar proyectos
+
+                    <i class="bi bi-arrow-right"></i>
+
+                </a>
+
+            </div>
+
+        </section>
+
+        <!-- INTRO -->
+
+        <section class="games-intro reveal" id="juegos">
+
+            <div>
+
+                <p class="section-label">
+
+                    <i class="bi bi-controller"></i>
+
+                    PORTAFOLIO 2026
+
+                </p>
+
+                <h2>
+
+                    Mis juegos
+
+                    <span>✦</span>
+
+                </h2>
+
+            </div>
+
+            <p class="intro-text">
+
+                Una colección de proyectos,
+                experimentos y pequeñas aventuras
+                interactivas.
+
+            </p>
+
+        </section>
+
+        <!-- GRID -->
+
+        <section class="games-grid">
+
+            <!-- AGUA -->
+
+            <article class="game-card reveal">
+
+                <div class="game-image">
+
+                    <img
+                        src="AGUA/agua-gameplay.png"
+                        alt="Gameplay de Reto Gota a Gota">
+
+                    <span class="game-number">
+                        01
+                    </span>
+
+                    <span class="game-tag">
+
+                        <i class="bi bi-droplet-fill"></i>
+
+                        EDUCATIVO
+
+                    </span>
+
+                    <div class="image-shine"></div>
+
+                </div>
+
+                <div class="game-info">
+
+                    <div>
+
+                        <p class="game-type">
+                            VIDEOJUEGO EDUCATIVO
+                        </p>
+
+                        <h3>
+                            AGUA
+                        </h3>
+
+                        <p class="game-description">
+
+                            Reto Gota a Gota es un videojuego
+                            educativo donde deberás tomar
+                            decisiones rápidas para ahorrar
+                            la mayor cantidad de agua posible,
+                            superar 10 retos y conseguir la
+                            puntuación más alta.
+
+                        </p>
+
+                    </div>
+
+                    <a
+                        href="AGUA/index.html"
+                        class="game-arrow"
+                        aria-label="Abrir Reto Gota a Gota">
+
+                        <i class="bi bi-arrow-up-right"></i>
+
+                    </a>
+
+                </div>
+
+            </article>
+
+            <!-- TURBOPLATO -->
+
+            <article class="game-card reveal">
+
+                <div class="game-image">
+
+                    <img
+                        src="TURBOPLATO/turboplato-gameplay.png"
+                        alt="Gameplay de TURBOPLATO">
+
+                    <span class="game-number">
+                        02
+                    </span>
+
+                    <span class="game-tag">
+
+                        <i class="bi bi-apple"></i>
+
+                        ARCADE
+
+                    </span>
+
+                    <div class="image-shine"></div>
+
+                </div>
+
+                <div class="game-info">
+
+                    <div>
+
+                        <p class="game-type">
+                            VIDEOJUEGO ARCADE
+                        </p>
+
+                        <h3>
+                            TURBOPLATO
+                        </h3>
+
+                        <p class="game-description">
+
+                            Un juego arcade de acción rápida
+                            donde tendrás que interactuar
+                            con los alimentos que aparecen
+                            en pantalla. Consigue puntos
+                            seleccionando correctamente
+                            los alimentos saludables antes
+                            de que se acabe el tiempo.
+
+                        </p>
+
+                    </div>
+
+                    <a
+                        href="TURBOPLATO/index.html"
+                        class="game-arrow"
+                        aria-label="Abrir TURBOPLATO">
+
+                        <i class="bi bi-arrow-up-right"></i>
+
+                    </a>
+
+                </div>
+
+            </article>
+
+            <!-- VIDA EN BALANCE -->
+
+            <article class="game-card reveal">
+
+                <div class="game-image">
+
+                    <img
+                        src="VIDA-EN-BALANCE/vida-en-balance-gameplay.png"
+                        alt="Gameplay de Vida en Balance">
+
+                    <span class="game-number">
+                        03
+                    </span>
+
+                    <span class="game-tag">
+
+                        <i class="bi bi-tree-fill"></i>
+
+                        AVENTURA
+
+                    </span>
+
+                    <div class="image-shine"></div>
+
+                </div>
+
+                <div class="game-info">
+
+                    <div>
+
+                        <p class="game-type">
+                            AVENTURA · SIMULACIÓN
+                        </p>
+
+                        <h3>
+                            VIDA EN BALANCE
+                        </h3>
+
+                        <p class="game-description">
+
+                            Explora un mundo interactivo,
+                            administra tus recursos y toma
+                            decisiones que pueden cambiar
+                            el desarrollo de la partida.
+                            Encuentra el equilibrio mientras
+                            descubres el mapa.
+
+                        </p>
+
+                    </div>
+
+                    <a
+                        href="VIDA-EN-BALANCE/index.html"
+                        class="game-arrow"
+                        aria-label="Abrir Vida en Balance">
+
+                        <i class="bi bi-arrow-up-right"></i>
+
+                    </a>
+
+                </div>
+
+            </article>
+
+            <!-- ZAFARI -->
+
+            <article class="game-card reveal">
+
+                <div class="game-image">
+
+                    <img
+                        src="ZAFARI/zafimath-gameplay.png"
+                        alt="Gameplay de Zafimath Adventure">
+
+                    <span class="game-number">
+                        04
+                    </span>
+
+                    <span class="game-tag">
+
+                        <i class="bi bi-calculator"></i>
+
+                        EDUCATIVO
+
+                    </span>
+
+                    <div class="image-shine"></div>
+
+                </div>
+
+                <div class="game-info">
+
+                    <div>
+
+                        <p class="game-type">
+                            EDUCATIVO · PUZZLE
+                        </p>
+
+                        <h3>
+                            ZAFARI
+                        </h3>
+
+                        <p class="game-description">
+
+                            Zafimath Adventure combina aventura
+                            y matemáticas. Ayuda al Cuidador
+                            Mateo a liberar animales resolviendo
+                            operaciones mientras avanzas por
+                            10 niveles de la selva.
+
+                        </p>
+
+                    </div>
+
+                    <a
+                        href="ZAFARI/index.html"
+                        class="game-arrow"
+                        aria-label="Abrir ZAFARI">
+
+                        <i class="bi bi-arrow-up-right"></i>
+
+                    </a>
+
+                </div>
+
+            </article>
+
+            <!-- ECOHEROES -->
+
+            <article class="game-card reveal">
+
+                <div class="game-image">
+
+                    <img
+                        src="ECOHEROES/ecoheroes-gameplay.png"
+                        alt="Gameplay de ECOHEROES">
+
+                    <span class="game-number">
+                        05
+                    </span>
+
+                    <span class="game-tag">
+
+                        <i class="bi bi-leaf-fill"></i>
+
+                        ECO
+
+                    </span>
+
+                    <div class="image-shine"></div>
+
+                </div>
+
+                <div class="game-info">
+
+                    <div>
+
+                        <p class="game-type">
+                            VIDEOJUEGO EDUCATIVO
+                        </p>
+
+                        <h3>
+                            ECOHEROES
+                        </h3>
+
+                        <p class="game-description">
+
+                            Conviértete en un Ecohéroe y supera
+                            diferentes desafíos relacionados
+                            con el cuidado del medio ambiente.
+                            Aprende, toma decisiones y ayuda a
+                            construir un mundo más sostenible.
+
+                        </p>
+
+                    </div>
+
+                    <a
+                        href="ECOHEROES/index.html"
+                        class="game-arrow"
+                        aria-label="Abrir ECOHEROES">
+
+                        <i class="bi bi-arrow-up-right"></i>
+
+                    </a>
+
+                </div>
+
+            </article>
+
+            <!-- UN DIA DIFERENTE -->
+
+            <article class="game-card reveal">
+
+                <div class="game-image">
+
+                    <img
+                        src="UN_DIA_DIFERENTE/un-dia-diferente-gameplay.png"
+                        alt="Gameplay de Un Día Diferente">
+
+                    <span class="game-number">
+                        06
+                    </span>
+
+                    <span class="game-tag">
+
+                        <i class="bi bi-stars"></i>
+
+                        AVENTURA
+
+                    </span>
+
+                    <div class="image-shine"></div>
+
+                </div>
+
+                <div class="game-info">
+
+                    <div>
+
+                        <p class="game-type">
+                            AVENTURA · INTERACTIVO
+                        </p>
+
+                        <h3>
+                            UN DÍA DIFERENTE
+                        </h3>
+
+                        <p class="game-description">
+
+                            Vive una aventura interactiva en
+                            la que tus decisiones pueden cambiar
+                            la experiencia. Explora diferentes
+                            situaciones y descubre qué puede
+                            hacer diferente cada día.
+
+                        </p>
+
+                    </div>
+
+                    <a
+                        href="UN_DIA_DIFERENTE/index.html"
+                        class="game-arrow"
+                        aria-label="Abrir Un Día Diferente">
+
+                        <i class="bi bi-arrow-up-right"></i>
+
+                    </a>
+
+                </div>
+
+            </article>
+
+        </section>
+
+        <!-- SOBRE EL PORTAFOLIO -->
+
+        <section
+            class="about-section reveal"
+            id="sobre-mi">
+
+            <div class="about-badge">
+
+                <i class="bi bi-controller"></i>
+
+                <span>GAME</span>
+
+                <span>DEV</span>
+
+            </div>
+
+            <div>
+
+                <p class="section-label">
+                    SOBRE EL PORTAFOLIO
+                </p>
+
+                <h2>
+
+                    Diseñado para
+
+                    <br>
+
+                    <em>hacerlos brillar.</em>
+
+                </h2>
+
+                <p class="about-text">
+
+                    Este portafolio reúne proyectos de
+                    videojuegos, experimentos y experiencias
+                    interactivas. Cada juego tiene su propio
+                    espacio para mostrar su gameplay,
+                    personalidad y objetivos.
+
+                </p>
+
+                <p class="about-text">
+
+                    Los proyectos combinan creatividad,
+                    programación y diseño para crear
+                    experiencias interactivas entretenidas
+                    y educativas.
+
+                </p>
+
+                <p class="about-text">
+
+                    <strong>👩‍💻 Sobre mí:</strong>
+                    Soy Patty, estudiante y desarrolladora
+                    en formación interesada en el desarrollo
+                    de videojuegos, la programación, el diseño
+                    de experiencias interactivas y la creación
+                    de proyectos educativos.
+
+                </p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <div>
+
+            <i class="bi bi-heart-fill"></i>
+
+            MADE WITH LOVE & PIXELS
+
+        </div>
+
+        <div>
+
+            GAME DEVELOPMENT PORTFOLIO ·
+
+            <span id="year"></span>
+
+        </div>
+
+    </footer>
+
+
+    <!-- ==============================
+         JAVASCRIPT
+    =============================== -->
+
+    <script>
+
+        /* AÑO AUTOMÁTICO */
+
+        const yearElement =
+            document.getElementById("year");
+
+        if (yearElement) {
+
+            yearElement.textContent =
+                new Date().getFullYear();
+
+        }
+
+
+        /* SCROLL REVEAL */
+
+        const revealElements =
+            document.querySelectorAll(".reveal");
+
+        const revealObserver =
+            new IntersectionObserver(
+
+                (entries, observer) => {
+
+                    entries.forEach((entry) => {
+
+                        if (entry.isIntersecting) {
+
+                            entry.target.classList.add(
+                                "visible"
+                            );
+
+                            observer.unobserve(
+                                entry.target
+                            );
+
+                        }
+
+                    });
+
+                },
+
+                {
+                    threshold: 0.12
+                }
+
+            );
+
+
+        revealElements.forEach((element) => {
+
+            revealObserver.observe(element);
+
+        });
+
+
+        /* CURSOR GLOW */
+
+        const cursorGlow =
+            document.querySelector(".cursor-glow");
+
+        document.addEventListener(
+            "mousemove",
+            (event) => {
+
+                if (!cursorGlow) return;
+
+                cursorGlow.style.left =
+                    event.clientX + "px";
+
+                cursorGlow.style.top =
+                    event.clientY + "px";
+
+            }
+        );
+
+
+        /* PARALLAX DEL HERO */
+
+        const hero =
+            document.querySelector(".hero");
+
+        const heroHeart =
+            document.querySelector(".hero-heart");
+
+        const heroStar =
+            document.querySelector(".hero-star");
+
+        const orbitOne =
+            document.querySelector(".orbit-one");
+
+        const orbitTwo =
+            document.querySelector(".orbit-two");
+
+
+        if (hero) {
+
+            hero.addEventListener(
+                "mousemove",
+                (event) => {
+
+                    const x =
+                        (event.clientX /
+                            window.innerWidth -
+                            0.5) * 20;
+
+                    const y =
+                        (event.clientY /
+                            window.innerHeight -
+                            0.5) * 20;
+
+                    if (heroHeart) {
+
+                        heroHeart.style.transform =
+                            `translate(${x}px, ${y}px) rotate(10deg)`;
+
+                    }
+
+                    if (heroStar) {
+
+                        heroStar.style.transform =
+                            `translate(${-x}px, ${-y}px) rotate(-10deg)`;
+
+                    }
+
+                    if (orbitOne) {
+
+                        orbitOne.style.transform =
+                            `translate(${x * .3}px, ${y * .3}px)`;
+
+                    }
+
+                    if (orbitTwo) {
+
+                        orbitTwo.style.transform =
+                            `translate(${-x * .2}px, ${-y * .2}px)`;
+
+                    }
+
+                }
+            );
+
+
+            hero.addEventListener(
+                "mouseleave",
+                () => {
+
+                    if (heroHeart) {
+
+                        heroHeart.style.transform =
+                            "translate(0,0) rotate(10deg)";
+
+                    }
+
+                    if (heroStar) {
+
+                        heroStar.style.transform =
+                            "translate(0,0) rotate(-10deg)";
+
+                    }
+
+                }
+            );
+
+        }
+
+
+        /* HOVER DE LAS TARJETAS */
+
+        const cards =
+            document.querySelectorAll(".game-card");
+
+
+        cards.forEach((card) => {
+
+            card.addEventListener(
+                "mouseenter",
+                () => {
+
+                    card.style.setProperty(
+                        "--mouse-x",
+                        "50%"
+                    );
+
+                    card.style.setProperty(
+                        "--mouse-y",
+                        "50%"
+                    );
+
+                }
+            );
+
+
+            card.addEventListener(
+                "mousemove",
+                (event) => {
+
+                    const rect =
+                        card.getBoundingClientRect();
+
+                    const x =
+                        event.clientX -
+                        rect.left;
+
+                    const y =
+                        event.clientY -
+                        rect.top;
+
+                    card.style.setProperty(
+                        "--mouse-x",
+                        `${x}px`
+                    );
+
+                    card.style.setProperty(
+                        "--mouse-y",
+                        `${y}px`
+                    );
+
+                }
+            );
+
+        });
+
+
+        /* CLICK EFFECT */
+
+        cards.forEach((card) => {
+
+            card.addEventListener(
+                "click",
+                (event) => {
+
+                    const link =
+                        card.querySelector(
+                            ".game-arrow[href]"
+                        );
+
+                    if (
+                        link &&
+                        event.target.closest(
+                            ".game-arrow"
+                        ) === null
+                    ) {
+
+                        card.classList.add(
+                            "card-clicked"
+                        );
+
+                        setTimeout(() => {
+
+                            card.classList.remove(
+                                "card-clicked"
+                            );
+
+                        }, 300);
+
+                    }
+
+                }
+            );
+
+        });
+
+
+        /* BOTONES CON RIPPLE */
+
+        const buttons =
+            document.querySelectorAll(
+                ".main-button, .secondary-button, .banner-button, .nav-button"
+            );
+
+
+        buttons.forEach((button) => {
+
+            button.addEventListener(
+                "click",
+                function (event) {
+
+                    const ripple =
+                        document.createElement("span");
+
+                    ripple.classList.add(
+                        "ripple"
+                    );
+
+                    const rect =
+                        button.getBoundingClientRect();
+
+                    ripple.style.left =
+                        event.clientX -
+                        rect.left +
+                        "px";
+
+                    ripple.style.top =
+                        event.clientY -
+                        rect.top +
+                        "px";
+
+                    button.appendChild(ripple);
+
+                    setTimeout(() => {
+
+                        ripple.remove();
+
+                    }, 600);
+
+                }
+            );
+
+        });
+
+    </script>
+
+</body>
+</html>
